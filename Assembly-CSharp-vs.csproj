@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{39355AF9-21D1-805C-B4B8-32991DC91621}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_5_2;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_WEBPLAYER;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_WEBCAM;ENABLE_MICROPHONE;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW;ENABLE_SUBSTANCE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\GameScripts\ExtraChanceText.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\Game.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\GameEndedScreen.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\GameSummary.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\GameSummaryMenuButton.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\GameSummaryNextButton.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\GameSummaryRetryButton.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\GameTile.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\Global.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\HeartPiece.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\LevelIndicator.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\LivesArray.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\Medal.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\MedalTile.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\MenuButton.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\PauseScreenContinueButton.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\PauseScreenMenuButton.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\PauseScreenRetryButton.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\Puzzle.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\ResetButton.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\RotatingArrow.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\SkipButton.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\SkwerTile.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\StackOrderElement.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\StackOrderImage.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\SupportingTile.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\TilesArray.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\TutorialText.cs" />
+     <Compile Include="Assets\Scripts\MenuScripts\LogoLight.cs" />
+     <Compile Include="Assets\Scripts\MenuScripts\MainMenu.cs" />
+     <Compile Include="Assets\Scripts\MenuScripts\MainMenuPlayButton.cs" />
+     <Compile Include="Assets\Scripts\MenuScripts\MainMenuQuickPlayButton.cs" />
+     <Compile Include="Assets\Scripts\MenuScripts\MainMenuTile.cs" />
+     <Compile Include="Assets\Scripts\MenuScripts\MainMenuTutorialButton.cs" />
+     <Compile Include="Assets\Scripts\MenuScripts\StackMenuCamera.cs" />
+     <Compile Include="Assets\Scripts\MenuScripts\StackMenuTile.cs" />
+     <Compile Include="Assets\Scripts\MenuScripts\StackMenuTilesArray.cs" />
+     <Compile Include="Assets\Scripts\MenuScripts\StackMenuTilesArrayButton.cs" />
+     <None Include="Assets\Shaders\TransSelfLitAlpha.shader" />
+     <None Include="Assets\Shaders\3DText.shader" />
+     <None Include="Assets\Shaders\TransSelfLit.shader" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
