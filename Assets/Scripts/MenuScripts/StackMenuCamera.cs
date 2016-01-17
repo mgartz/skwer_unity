@@ -68,8 +68,8 @@ public class StackMenuCamera : MonoBehaviour {
 		}
 	}
 	
-	void OnGUI() {
-        if (Event.current.Equals(Event.KeyboardEvent("escape")))
+	void Update() {
+		if (Input.GetKeyDown(KeyCode.Escape))
 			Application.LoadLevel("MenuScene");
     }
 	

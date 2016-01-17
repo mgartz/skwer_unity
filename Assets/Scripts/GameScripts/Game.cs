@@ -116,9 +116,8 @@ public class Game : MonoBehaviour
 	
 	public Medal[] medals;
 	
-	
-	void OnGUI (){
-		if (Event.current.Equals (Event.KeyboardEvent ("escape"))) {
+	void Update () {
+		if (Input.GetKeyDown(KeyCode.Escape)) {
 			if (isQuickGame) {
 				if (Global.isGameActive)
 					togglePauseScreen ();
@@ -131,6 +130,8 @@ public class Game : MonoBehaviour
 					togglePauseScreen ();
 			}
 		}
+	}
+	void OnGUI (){
 		if ((Event.current.Equals (Event.KeyboardEvent ("space")) || Event.current.Equals (Event.KeyboardEvent ("return")) || Input.GetMouseButtonDown (0)) && !isQuickGame) {
 			if (isStartingAnimation)
 				quickStart ();
